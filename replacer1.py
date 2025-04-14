@@ -1,9 +1,7 @@
 import pandas as pd
 
 
-def missing_value_treatment(
-    df: pd.DataFrame, datetime_fill_method: str = "ffill"
-) -> pd.DataFrame:
+def missing_value_treatment(df: pd.DataFrame) -> pd.DataFrame:
     """
     Treat missing values in a DataFrame by:
     - Filling categorical and datetime columns with their mode.
